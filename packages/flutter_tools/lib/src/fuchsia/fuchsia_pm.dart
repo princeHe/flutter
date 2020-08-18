@@ -209,6 +209,8 @@ class FuchsiaPackageServer {
   // The name used to reference the server by fuchsia-pkg:// urls.
   final String name;
 
+  int get port => _port;
+
   /// Uses [FuchiaPM.newrepo] and [FuchsiaPM.serve] to spin up a new Fuchsia
   /// package server.
   ///
